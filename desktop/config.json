@@ -1,0 +1,16 @@
+{
+  "server_url": "http://localhost:3000",
+  "wake_phrases": [
+    "jarvis yeh kaam karo",
+    "jarvis yeh akm karo",
+    "jarvis ye kaam karo",
+    "jarvis ye kam karo",
+    "jarvis kaam karo",
+    "jarvis suno",
+    "hey jarvis",
+    "jarvis"
+  ],
+  "sound_effects": true,
+  "speech_rate": 185,
+  "language": "AUTO"
+}

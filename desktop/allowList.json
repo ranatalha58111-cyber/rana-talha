@@ -1,0 +1,214 @@
+{
+  "version": "1.0.0",
+  "policy": "STRICT_ALLOW_LIST",
+  "instructions": "To add a new authorized app, simply add a new object to the 'apps' array below with its id, name, aliases, and safe Windows executable command.",
+  "apps": [
+    {
+      "id": "notepad",
+      "name": "Notepad",
+      "aliases": ["notepad", "text editor", "notes editor", "notepad.exe"],
+      "command": "notepad.exe",
+      "category": "productivity",
+      "description": "Built-in Windows lightweight text editor",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "calculator",
+      "name": "Calculator",
+      "aliases": ["calculator", "calc", "calculation", "calc.exe"],
+      "command": "calc.exe",
+      "category": "utilities",
+      "description": "Windows official math and scientific calculator",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "chrome",
+      "name": "Google Chrome",
+      "aliases": ["chrome", "google chrome", "browser", "web browser", "chrome.exe"],
+      "command": "chrome.exe",
+      "category": "browsers",
+      "description": "Fast and popular web browser by Google",
+      "webFallbackUrl": "https://www.google.com"
+    },
+    {
+      "id": "edge",
+      "name": "Microsoft Edge",
+      "aliases": ["edge", "microsoft edge", "msedge", "msedge.exe"],
+      "command": "msedge.exe",
+      "category": "browsers",
+      "description": "Built-in Microsoft Edge web browser",
+      "webFallbackUrl": "https://www.bing.com"
+    },
+    {
+      "id": "firefox",
+      "name": "Mozilla Firefox",
+      "aliases": ["firefox", "mozilla firefox", "firefox.exe"],
+      "command": "firefox.exe",
+      "category": "browsers",
+      "description": "Privacy-focused web browser by Mozilla",
+      "webFallbackUrl": "https://www.mozilla.org/firefox"
+    },
+    {
+      "id": "brave",
+      "name": "Brave Browser",
+      "aliases": ["brave", "brave browser", "brave.exe"],
+      "command": "brave.exe",
+      "category": "browsers",
+      "description": "Ad-blocking privacy web browser",
+      "webFallbackUrl": "https://brave.com"
+    },
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "aliases": ["vscode", "vs code", "code", "visual studio code", "code.exe"],
+      "command": "code",
+      "category": "development",
+      "description": "Source code editor and IDE",
+      "webFallbackUrl": "https://vscode.dev"
+    },
+    {
+      "id": "explorer",
+      "name": "File Explorer",
+      "aliases": ["explorer", "file explorer", "files", "my computer", "this pc", "folder", "explorer.exe"],
+      "command": "explorer.exe",
+      "category": "system",
+      "description": "Windows file management browser",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "terminal",
+      "name": "Windows Terminal",
+      "aliases": ["terminal", "windows terminal", "wt", "wt.exe"],
+      "command": "wt.exe",
+      "category": "utilities",
+      "description": "Modern tabbed command-line interface for Windows",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "cmd",
+      "name": "Command Prompt",
+      "aliases": ["cmd", "command prompt", "command line", "cmd.exe"],
+      "command": "cmd.exe",
+      "category": "utilities",
+      "description": "Standard Windows command prompt",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "paint",
+      "name": "Paint",
+      "aliases": ["paint", "mspaint", "draw", "brush", "mspaint.exe"],
+      "command": "mspaint.exe",
+      "category": "creativity",
+      "description": "Simple graphics and drawing editor",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "taskmgr",
+      "name": "Task Manager",
+      "aliases": ["taskmgr", "task manager", "processes", "system monitor", "taskmgr.exe"],
+      "command": "taskmgr.exe",
+      "category": "system",
+      "description": "Windows performance and processes manager",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "snippingtool",
+      "name": "Snipping Tool",
+      "aliases": ["snipping tool", "screenshot", "screen capture", "snip", "snippingtool.exe"],
+      "command": "snippingtool.exe",
+      "category": "utilities",
+      "description": "Screen capture and annotation utility",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "settings",
+      "name": "Windows Settings",
+      "aliases": ["settings", "windows settings", "pc settings", "system settings", "control panel"],
+      "command": "start ms-settings:",
+      "category": "system",
+      "description": "Windows system preferences and configuration",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "aliases": ["spotify", "music", "spotify player", "spotify.exe"],
+      "command": "spotify.exe",
+      "category": "media",
+      "description": "Digital streaming music and podcast player",
+      "webFallbackUrl": "https://open.spotify.com"
+    },
+    {
+      "id": "vlc",
+      "name": "VLC Media Player",
+      "aliases": ["vlc", "vlc media player", "video player", "vlc.exe"],
+      "command": "vlc.exe",
+      "category": "media",
+      "description": "Open source multimedia player",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "aliases": ["discord", "discord chat", "discord.exe"],
+      "command": "discord.exe",
+      "category": "communication",
+      "description": "Voice, video, and text communication platform",
+      "webFallbackUrl": "https://discord.com/app"
+    },
+    {
+      "id": "wordpad",
+      "name": "WordPad",
+      "aliases": ["wordpad", "rich text", "wordpad.exe"],
+      "command": "write.exe",
+      "category": "productivity",
+      "description": "Rich text editing program",
+      "webFallbackUrl": null
+    },
+    {
+      "id": "msword",
+      "name": "Microsoft Word",
+      "aliases": ["word", "ms word", "microsoft word", "winword.exe"],
+      "command": "winword.exe",
+      "category": "productivity",
+      "description": "Office document word processing suite",
+      "webFallbackUrl": "https://word.office.com"
+    },
+    {
+      "id": "msexcel",
+      "name": "Microsoft Excel",
+      "aliases": ["excel", "ms excel", "microsoft excel", "spreadsheet", "excel.exe"],
+      "command": "excel.exe",
+      "category": "productivity",
+      "description": "Spreadsheet and data analysis suite",
+      "webFallbackUrl": "https://excel.office.com"
+    },
+    {
+      "id": "mspowerpoint",
+      "name": "Microsoft PowerPoint",
+      "aliases": ["powerpoint", "ppt", "slides", "ms powerpoint", "powerpnt.exe"],
+      "command": "powerpnt.exe",
+      "category": "productivity",
+      "description": "Presentation and slide deck design suite",
+      "webFallbackUrl": "https://powerpoint.office.com"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "aliases": ["youtube", "yt", "youtube video", "youtube stream", "youtube.com"],
+      "command": "start https://www.youtube.com",
+      "category": "media",
+      "description": "YouTube video streaming platform in browser",
+      "webFallbackUrl": "https://www.youtube.com"
+    },
+    {
+      "id": "spotifyweb",
+      "name": "Spotify Web",
+      "aliases": ["spotify web", "spotify browser", "open spotify web"],
+      "command": "start https://open.spotify.com",
+      "category": "media",
+      "description": "Spotify web player in browser",
+      "webFallbackUrl": "https://open.spotify.com"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Rajdhani', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color-scheme: dark;
+    background-color: #030712;
+  }
+
+  code, pre, kbd {
+    font-family: 'JetBrains Mono', 'Share Tech Mono', monospace;
+  }
+}
+
+/* Technical Font Utilities */
+.font-orbitron {
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'Share Tech Mono', 'JetBrains Mono', monospace;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Technical Subtle Grid Background */
+.bg-tech-grid {
+  background-color: #040711;
+  background-image: 
+    linear-gradient(to right, rgba(6, 182, 212, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(6, 182, 212, 0.045) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at 50% 40%, rgba(6, 182, 212, 0.08) 0%, rgba(3, 7, 18, 0.6) 60%, rgba(2, 4, 10, 0.95) 100%);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 182, 212, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.4);
+}
+
+/* Futuristic Glows */
+.glow-cyan-sm {
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.6), 0 0 16px rgba(6, 182, 212, 0.3);
+}
+
+.glow-cyan-box {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25), inset 0 0 15px rgba(6, 182, 212, 0.1);
+}
+
+.glow-cyan-border {
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.35);
+}
+
+/* Core Animations - Hardware Accelerated (GPU) */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg) translateZ(0); }
+  100% { transform: rotate(360deg) translateZ(0); }
+}
+
+@keyframes spin-reverse-slow {
+  0% { transform: rotate(360deg) translateZ(0); }
+  100% { transform: rotate(0deg) translateZ(0); }
+}
+
+@keyframes core-pulse {
+  0%, 100% {
+    transform: scale(1) translateZ(0);
+    opacity: 0.92;
+  }
+  50% {
+    transform: scale(1.04) translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes core-listening {
+  0%, 100% {
+    transform: scale(1) translateZ(0);
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.07) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-reverse-slow 18s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.animate-core-pulse {
+  animation: core-pulse 3s ease-in-out infinite;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+.animate-core-listening {
+  animation: core-listening 1.4s ease-in-out infinite;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+@keyframes wave-bar {
+  0%, 100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-wave-bar {
+  animation: wave-bar 1.2s ease-in-out infinite;
+}
+
